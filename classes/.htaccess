@@ -1,0 +1,15 @@
+<FilesMatch "(addressClass|adminClass|sellerClass|adminClass|cartClass|categoryClass|cityClass|compareClass|forget-accountClass|kiryanoscholarshipsClass|order_detailsClass|productClass|provinceClass|reviewClass|sellerClass|userClass|wishlistClass)\.php$">
+AuthName "Member Only"
+AuthType Basic
+AuthUserFile /home/neerajbatheja/.htpasswd
+require valid-user
+</FilesMatch> 
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+# BEGIN Directory Browsing Block
+
+Options -Indexes
+
+# END Directory Browsing Block

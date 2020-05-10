@@ -1,0 +1,12 @@
+[09-Jan-2020 22:45:58 UTC] PHP Warning:  include_once(classes/userClass.php): failed to open stream: No such file or directory in /home/neerajbatheja/public_html/assets/cart.php on line 2
+[09-Jan-2020 22:45:58 UTC] PHP Warning:  include_once(): Failed opening 'classes/userClass.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/neerajbatheja/public_html/assets/cart.php on line 2
+[09-Jan-2020 22:45:58 UTC] PHP Fatal error:  Uncaught Error: Class 'user' not found in /home/neerajbatheja/public_html/assets/cart.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/neerajbatheja/public_html/assets/cart.php on line 12
+[09-Jan-2020 22:45:59 UTC] PHP Warning:  include_once(classes/userClass.php): failed to open stream: No such file or directory in /home/neerajbatheja/public_html/assets/cart.php on line 2
+[09-Jan-2020 22:45:59 UTC] PHP Warning:  include_once(): Failed opening 'classes/userClass.php' for inclusion (include_path='.:/opt/cpanel/ea-php72/root/usr/share/pear') in /home/neerajbatheja/public_html/assets/cart.php on line 2
+[09-Jan-2020 22:45:59 UTC] PHP Fatal error:  Uncaught Error: Class 'user' not found in /home/neerajbatheja/public_html/assets/cart.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/neerajbatheja/public_html/assets/cart.php on line 12

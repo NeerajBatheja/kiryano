@@ -1,0 +1,27 @@
+<FilesMatch "(admin|seller_account|admin_login_register|seller_login_register)\.php$">
+AuthName "Member Only"
+AuthType Basic
+require valid-user
+</FilesMatch> 
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+# BEGIN Directory Browsing Block
+
+Options -Indexes
+
+# END Directory Browsing Block
+
+AuthUserFile "/home/neerajbatheja/.htpasswds/public_html/passwd"
+
+RewriteCond %{HTTP_REFERER} !^http://kiryano.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://kiryano.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.kiryano.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^http://www.kiryano.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://kiryano.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://kiryano.com$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.kiryano.com/.*$      [NC]
+RewriteCond %{HTTP_REFERER} !^https://www.kiryano.com$      [NC]
+RewriteRule .*\.(jpg|jpeg|gif|png|bmp)$ - [F,NC]
+
