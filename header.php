@@ -353,7 +353,7 @@
 	<br>
 
 	<!--=====  End of Header  ======-->
-	<script src="assets/js/vendor/jquery.min.js" async></script>
+	<script src="assets/js/vendor/jquery.min.js"></script>
 
 	<!-- Popper JS -->
 	<script src="assets/js/popper.min.js" async></script>
