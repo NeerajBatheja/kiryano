@@ -13,7 +13,7 @@ Options -Indexes
 
 # END Directory Browsing Block
 
-AuthUserFile "/home/neerajbatheja/.htpasswds/public_html/passwd"
+AuthUserFile "/home/ubuntu/.htpasswds/public_html/passwd"
 
 RewriteCond %{HTTP_REFERER} !^http://kiryano.com/.*$      [NC]
 RewriteCond %{HTTP_REFERER} !^http://kiryano.com$      [NC]
