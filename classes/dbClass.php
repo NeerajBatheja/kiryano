@@ -13,7 +13,7 @@ class db
 	}
 	public static function connect(){
 		if(!isset($conn)){
-			self::$conn= mysqli_connect("localhost","neerajba_neerajbatheja","neerajBatheja5506","neerajba_myprj");
+			self::$conn= mysqli_connect("localhost","root","waheGuru5506@","neerajba_myprj");
 			if (mysqli_connect_errno())
 			{
 			 echo "Failed to connect to MySQL: " . mysqli_connect_error();
