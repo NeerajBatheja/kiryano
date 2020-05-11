@@ -879,7 +879,6 @@ else
 {
 echo'<script async>
 $(window).scrollTop(getcookie);
-document.cookie = "saveScroll=; max-age=0";
 </script> ';
 }
 

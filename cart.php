@@ -260,7 +260,7 @@ document.cookie = "saveScroll = " + saveScroll
     //getting cookie back to javascript variable using php cookie function
     getcookie = '<?php echo $_COOKIE['saveScroll']; ;?>';
     $(window).scrollTop(getcookie);
-    document.cookie = "saveScroll=; max-age=0";
+    
 </script>    
 
 
