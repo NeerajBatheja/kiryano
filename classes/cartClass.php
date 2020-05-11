@@ -35,7 +35,8 @@ class cart
 	function add_to_cart($pid ,$ono,$qty){
 	    // if product already exist it print and returns else insert product in to database;
 		if($oid = $this->if_already_exist($pid,$ono)){
-		   echo '<h4><font color="green">Product you are trying to add is already in the cart</font></h4>';
+		   //echo '<h4><font color="green">Product you are trying to add is already in the cart</font></h4>';
+			unset($_SESSION["product"]);
 			return;// $this->increase_product($oid);
 		}else{
 			$date = date("d/m/y");
@@ -46,7 +47,7 @@ class cart
     		
 			// if inserted successfull return 1 else return 0;	
 			if($stmt->execute()){
-			    echo '<h4><font color="green">Your product has been added</font></h4>';
+			    //echo '<h4><font color="green">Your product has been added</font></h4>';
 			    return 1;
 			}else return 0;
 		}
